@@ -143,7 +143,7 @@ function onMessageHandler(ch, user, msg, self) {
 		//console.log(command_regex.exec(msg));
 		
 		// let's plug it in and see what smokes...
-		// fuck yeah, this works, time to tokenize this string
+		// fuzz yeah, this works, time to tokenize this string
 		
 		let command_tokens = msg.match(token_regex); // fun fact no shadowing of 'let' delcared vars in javascript.
 		//debug
@@ -371,9 +371,9 @@ function onMessageHandler(ch, user, msg, self) {
 			_say("Debug: Everything works...");
 			_say("Except javascript! WTF scoping rules.");
 			_say("I'm becoming Rustacean!");
-			// This is fucking stupid to put here but javascript 
-			// has fucked up scoping rules 
-			// how the fuck this language made it fucking anywhere is beyond me!
+			// This is fuzzing stupid to put here but javascript 
+			// has fuzzed up scoping rules 
+			// how the fuzz this language made it fuzzing anywhere is beyond me!
 			// FML I'll be glad when it's dead, like perl. 
 			// (no perl, a name change won't change the pice of shit you are)
 			// WTF Javascript, you  make my code look ugly! :cry:
