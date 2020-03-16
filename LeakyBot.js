@@ -1,6 +1,14 @@
 //LeakyBot.js
+// (C) 2020 https://github.com/PointyFluff
+// License: MIT
+//   
+// If you are reading this, I'm sorry.
+// This is a prototype for funsies. I plan on rewriting this in rust. 
+// But this is for fun and not serious code. So, if you are a potential employeer, please keep that in mind. 
+
+
+
 // first go in javascript. Ugh, javascript.
-// javascript is the slacker-stoner of the dev world.
 // it'll do whatever, just not in a robust way.
 // 
 // next version will be in rust; a proper language. 
@@ -48,6 +56,10 @@ const cv = config.cvinfo; // break this out because I'm lazy
 const client = new tmi.client(config.client_options); // create a new client w/ options
 
 // handle steam-games list caching here. 
+// FIXME: I borked this the other night. I had it working, then I did something. and it doesn't work now.
+// FIXME: I think it's a result of trying to use emacs key combos on a windows based editor. 
+// 		Now that I'm in emacs I can see a lot of errors. 
+
 var steam_games = new Set(); //global list of games. 
 var _steam_data = "";
 https.get(config.steam_url, (response) => { // async I think. it was 2am when I read the docs...
@@ -256,7 +268,7 @@ function onMessageHandler(ch, user, msg, self) {
 		}
 	}
 	
-	//strip whitepace for switch-case statement. 
+
 	// lol what was misa thinkins!
 	// posix options should be used to provide inline command options to the !commands
 	// !games -n   could show just Steam app_id or something...
