@@ -4,12 +4,11 @@
 //   
 // If you are reading this, I'm sorry.
 // This is a prototype for funsies. I plan on rewriting this in rust. 
-// But this is for fun and not serious code. So, if you are a potential employeer, please keep that in mind. 
-
+// But this is for fun and not serious code. 
 
 
 // first go in javascript. Ugh, javascript.
-// it'll do whatever, just not in a robust way.
+// it'll do whatever
 // 
 // next version will be in rust; a proper language. 
 // client config stored in config.json of the same folder as this file.
